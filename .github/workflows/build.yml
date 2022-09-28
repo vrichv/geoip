@@ -1,8 +1,8 @@
 name: Build geoip files
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 0 * * 4"
+  release:
+    types: [published]
   push:
     branches:
       - master
