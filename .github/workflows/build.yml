@@ -85,6 +85,7 @@ jobs:
           mkdir -p publish
           mv ./output/dat/*.dat ./output/dat/*.sha256sum ./output/maxmind/*.mmdb ./output/maxmind/*.sha256sum *.gz *.zip ./publish/
           cp -fpPR ./output/text ./publish
+          ls -l ./publish/*
 
       - name: Upload files to GitHub release
         uses: svenstaro/upload-release-action@v2
